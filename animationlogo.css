@@ -1,0 +1,33 @@
+ /* The animation code */
+@keyframes divcolor {
+  0%   {background:rgb(249, 223, 58); left:5px; top:5px;
+  transform: translateY(200px);}
+   25%  {background:rgb(255, 255, 255); left:5px; top:5px;}
+   50%  {background:rgb(1, 252, 123); left:200px; top:200px;}
+   75%  {background:rgba(195, 255, 0, 0.768); left:200px; top:200px;}
+  100% {background:rgb(255, 0, 0); left:120px; top:120px;
+  transform: rotate(90deg);}
+
+}
+
+
+/* The element to apply the animation to */
+div,:hover {
+  
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: rgb(18, 8, 18);
+  animation-name: divcolor;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+
+} 
+img{
+  width: 150px;
+
+  
+}
+
